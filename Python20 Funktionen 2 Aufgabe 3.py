@@ -1,17 +1,5 @@
-from daten import punkte_liste
-from turtle import *
-
-def gehe_wenn_nah(punkt: list):
-    
-    if distance(punkt) < 100:
-        goto(punkt)
-    else:
-        goto(0, 0)
-
-def main(liste: list):
-    for punkt in liste:
-        gehe_wenn_nah(punkt)
+from random import random
+zufalls_zahl = 1 + random() * 9
 
 
-
-main(punkte_liste)
+print(zufalls_zahl)
